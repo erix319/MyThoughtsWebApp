@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MyThoughtsWebApp.Models;
 
 namespace MyThoughtsWebApp.Data
 {
@@ -9,5 +10,6 @@ namespace MyThoughtsWebApp.Data
             : base(options)
         {
         }
+        public DbSet<MyThoughtsWebApp.Models.Article> Article { get; set; }
     }
 }

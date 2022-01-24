@@ -15,11 +15,13 @@ namespace MyThoughtsWebApp.Controllers
 
         public IActionResult Index()
         {
+            Console.WriteLine("User has clicked on Index page!");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            Console.WriteLine("User has clicked on Privacy page!");
             return View();
         }
 
